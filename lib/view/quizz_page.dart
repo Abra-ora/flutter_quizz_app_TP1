@@ -132,9 +132,6 @@ class _QuizzPageState extends State<QuizzPage>
                         color: Colors.black,
                       ),
                     ),
-                    const SizedBox(
-                      height: 10,
-                    ),
                     LinearProgressIndicator(
                       value: animation.value,
                     ),
@@ -146,7 +143,7 @@ class _QuizzPageState extends State<QuizzPage>
                           const Icon(Icons.error),
                       fit: BoxFit.fitWidth,
                       width: MediaQuery.of(context).size.width - 12,
-                      height: MediaQuery.of(context).size.height / 2,
+                      height: MediaQuery.of(context).size.height / 2.2,
                     ),
                   ],
                   //  )
