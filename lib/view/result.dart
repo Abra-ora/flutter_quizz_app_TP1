@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:quizz_app/service/quizz_service.dart';
 
 
@@ -45,7 +46,7 @@ class _QuizzResultState extends State<QuizzResult> {
           children: [
             Text(
               "Votre score est : ${widget.score}/${widget.total} : $mention",
-              style: const TextStyle(fontSize: 24),
+              style: const TextStyle(fontSize: 24,),
             ),
             const SizedBox(height: 20),
             TextButton(
@@ -58,7 +59,6 @@ class _QuizzResultState extends State<QuizzResult> {
                 ),
               ),
               onPressed: () {
-                // reset();
                 Navigator.pop(context);
               },
               

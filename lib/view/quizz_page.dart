@@ -129,9 +129,9 @@ class _QuizzPageState extends State<QuizzPage>
                       textAlign: TextAlign.center,
                       style: const TextStyle(
                         fontSize: 20.0,
-                        color: Colors.black,
                       ),
                     ),
+                    const SizedBox(height: 15,),
                     LinearProgressIndicator(
                       value: animation.value,
                     ),
@@ -161,7 +161,6 @@ class _QuizzPageState extends State<QuizzPage>
                 child: const Text(
                   'Vrai',
                   style: TextStyle(
-                    color: Colors.black,
                     fontSize: 20.0,
                   ),
                 ),
@@ -186,7 +185,6 @@ class _QuizzPageState extends State<QuizzPage>
                   'Faux',
                   style: TextStyle(
                     fontSize: 20.0,
-                    color: Colors.black,
                   ),
                 ),
                 onPressed: () {
