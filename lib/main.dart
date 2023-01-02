@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:quizz_app/view/home_page.dart';
 import 'package:provider/provider.dart';
 
-import 'model/theme_manager.dart';
+import 'theme/theme_manager.dart';
 
 void main() {
   // runApp(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../model/theme_manager.dart';
+import '../theme/theme_manager.dart';
 
 class SwitchButton extends StatefulWidget {
   const SwitchButton({super.key});
