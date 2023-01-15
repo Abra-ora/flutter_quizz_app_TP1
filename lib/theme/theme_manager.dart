@@ -27,16 +27,4 @@ class ThemeManager extends ChangeNotifier {
       notifyListeners();
     }
   }
-
- 
-
-  // void setDarkMode() {
-  //   _themeData = darkTheme;
-  //   notifyListeners();
-  // }
-
-  // void setLightMode() {
-  //   _themeData = lightTheme;
-  //   notifyListeners();
-  // }
 }

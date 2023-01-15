@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'result.dart';
 import 'package:quizz_app/service/quizz_service.dart';
-// ignore: depend_on_referenced_packages
 import 'package:cached_network_image/cached_network_image.dart';
 
 class QuizzPage extends StatefulWidget {
@@ -28,11 +27,7 @@ class _QuizzPageState extends State<QuizzPage>
         AnimationController(vsync: this, duration: const Duration(seconds: 10));
 
     animation = Tween<double>(begin: begin, end: end).animate(controller)
-      ..addListener(() {
-        setState(() {
-          // the state that has changed here is the animation object’s value
-        });
-      });
+      ..addListener(() {});
 
     controller.forward();
 
@@ -95,7 +90,6 @@ class _QuizzPageState extends State<QuizzPage>
         ));
       });
     }
-    ;
   }
 
   void calculateScore(bool answer) {
@@ -108,7 +102,6 @@ class _QuizzPageState extends State<QuizzPage>
       appBar: AppBar(
         title: const Text("Quizz : questions et réponses"),
         backgroundColor: Colors.grey[850],
-
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -131,7 +124,9 @@ class _QuizzPageState extends State<QuizzPage>
                         fontSize: 20.0,
                       ),
                     ),
-                    const SizedBox(height: 15,),
+                    const SizedBox(
+                      height: 15,
+                    ),
                     LinearProgressIndicator(
                       value: animation.value,
                     ),

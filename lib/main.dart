@@ -10,7 +10,7 @@ void main() {
   //       create: ((context) => ThemeManager()), child: const MyApp()),
   // );
   runApp(const MyApp());
-}
+} 
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
